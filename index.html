@@ -1,53 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SpaceCine</title>
-    <meta name="author" content="Nohana Assis">
-    <meta name="description" content="Página sobre cinema, desenvolvida no curso de LIMA do SENAI. O obejetivo é aprender a construir página web">
-    <meta name="keywords" content="HTML, CSS, Filmes, cinema">]
+    <meta name="author" content="Nohana Assis" />
+    <meta
+      name="description"
+      content="Página sobre cinema, desenvolvida no curso de LIMA do SENAI. O obejetivo é aprender a construir página web"
+    />
+    <meta name="keywords" content="HTML, CSS, Filmes, cinema" />
+    ]
     <title>SpaceCine</title>
-    <link rel="stylesheet" href="./src/styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
-    
-                           <!--------- Cabeçalho ------------>
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--------- Cabeçalho ------------>
 
     <header>
-        <!-- Grupo 1  -->
-         <img src="./src/assets/images/logo.svg" alt="Logo SpaceCine">
-        
-        <!-- Grupo 2 -->
-       <nav>
-            <ul class="menu"> 
-              
-                <li> <a href="">Início</a></li>
-                <li><a href="">Em Cartaz</a></li>
-                <li><a href="">Diferenciais</a></li>
-                <li><a href="">Destaques</a></li>
-                <li><a href="">Avaliações</a></li>
-            </ul>
-        </nav>  
-        
-        <nav>
-            <!-- Grupo 3 -->
-            <a href="" class="btnLogin">Login</a>
-        </nav>
-    </header>
-   <!----------------------- MAIN ----------------------->
-   <main>
-      <h1>Vingadores <span class="text-highlight">Ultimato</span></h1>  
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966.</p>
+      <!-- Grupo 1  -->
+      <img src="./src/assets/images/logo.svg" alt="Logo SpaceCine" />
+
+      <!-- Grupo 2 -->
       <nav>
-           <a href="" class="btnPrimary">Comprar agora</a>
-            <a href="" class="btnSecondary">Ver mais</a>  
-    </nav>
-   </main> 
-   
-    
-</body>
+        <ul class="menu">
+          <li><a href="">Início</a></li>
+          <li><a href="">Em Cartaz</a></li>
+          <li><a href="">Diferenciais</a></li>
+          <li><a href="">Destaques</a></li>
+          <li><a href="">Avaliações</a></li>
+        </ul>
+      </nav>
+
+      <nav>
+        <!-- Grupo 3 -->
+        <a href="" class="btnLogin">Login</a>
+      </nav>
+    </header>
+    <!----------------------- MAIN ----------------------->
+    <main>
+      <h1>Vingadores <span class="text-highlight">Ultimato</span></h1>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since 1966.
+      </p>
+      <nav>
+        <a href="" class="btnPrimary">Comprar agora</a>
+        <a href="" class="btnSecondary">Ver mais</a>
+      </nav>
+    </main>
+    <!------------------ SELECTION -------------------------->
+    <section class="section-showing">
+      <div class="showing-content">
+        <span>Agora no spacecine</span>
+        <div>Filmes em Cartaz</div>
+      </div>
+
+      <div class="showing-container-movies">  --------- Pai de tudo
+        <div class="card-movies">
+            <img src="./src/assets/images/Filme -1.svg" alt="Capa do filme Para todos os garotos" loading="lazy">
+            <h3>Para todos os garotos...</h3>
+            <div  class="movies-details">
+                <span>Romance - 1h 40m</span>
+                <div class="movie-avaliation">
+                    <img src="./src/assets/images/star.svg" alt="Estrela" loading="">
+                    <span>4.9</span>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
