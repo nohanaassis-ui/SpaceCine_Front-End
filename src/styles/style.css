@@ -1,13 +1,12 @@
 @import url("./global.css");
 
-/* ------------------ HEADER ------------------- */
+/* ------------- HEADER ------------- */
 header{
-     display: flex; 
+    display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: var(--color-purple900);
     padding: 15px 0;
-
 }
 
 .menu{
@@ -22,7 +21,6 @@ header{
     text-transform: uppercase;
     font-family: var(--font-title);
     font-size: 20px;
-
 }
 
 .btnLogin{
@@ -30,56 +28,119 @@ header{
     background-color: var(--color-purple500);
     font-family: var(--font-title);
     padding: 5px 30px;
-    border-radius: 5px;
     text-decoration: none;
+    border-radius: 5px;
     font-size: 20px;
 }
 
-main{
-    display:flex;
+main{    
+    display: flex;
     flex-direction: column;
-    gap:15px;
+    gap: 15px;
     justify-content: flex-end;
     padding-bottom: 100px;
-    padding-left: 100px;
+    padding-left: 110px;
     height: 80vh;
-    background-image: url("../assets/images/ilustrationMain.svg");
-    background-repeat:no-repeat;
-    background-size: cover;
+    background-image: url("../assets/images/ilustration.svg");
+    background-repeat: no-repeat;
+    background-size: cover;    
 }
 
 h1{
     color: var(--color-white);
     font-size: 80px;
     text-transform: uppercase;
-    font-family:var(--font-title);
+    font-family: var(--font-title);
     width: 303px;
     line-height: 68px;
-
 }
 
-main p{
+main p{    
     color: var(--color-white);
     font-family: var(--font-body);
-    font-size:  18px;
+    font-size: 18px;
     width: 447px;
-
 }
 
 .btnPrimary, .btnSecondary{
     color: var(--color-white);
     text-decoration: none;
     font-family: var(--font-title);
+    font-size: 17px;
     text-transform: uppercase;
     padding: 5px 30px;
-    font-size: 17px;
     border-radius: 5px;
 }
 
 .btnPrimary{
-    background-color: var(--color-purple500);
+    background-color: var(--color-purple500);    
 }
 
 .btnSecondary{
     border: 1px solid var(--color-white);
+}
+
+/* ------------- SECTION SHOWING MOVIES ------------- */
+.section-showing{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+    background-color: var(--color-dark);
+}
+
+.showing-content, .showing-container-movies{
+    width: 1072px;
+}
+
+.showing-content span{
+    color: var(--color-purple300);
+    font-family: var(--font-title);
+    font-size: 18px;
+}
+
+.showing-content h2{
+    color: var(--color-white);
+    font-family: var(--font-title);
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.showing-container-movies{
+    display: flex;
+    gap: 18px;
+}
+
+.card-movies h3{
+    color: var(--color-white);
+    font-family: var(--font-title);
+    font-weight: 400;
+    font-size: 18px;   
+    line-height: 12px;
+}
+
+.movies-details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.movies-details > span{
+    color: var(--color-purple300);
+    font-family: var(--font-title);
+    font-size: 12px;
+}
+
+.movie-avaliation{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.movie-avaliation span{
+    color: var(--color-yellow);
+    font-size: 12px;
+    font-family: var(--font-title);
+    font-weight: 400;
 }
